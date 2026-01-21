@@ -42,7 +42,8 @@
 button {
     font-family: "Inter", sans-serif;
 }
-.heading{
+
+.heading {
     font-size: 48px;
     font-weight: 700;
     color: #FFFFFF;
@@ -83,8 +84,9 @@ button {
     margin: 0 auto;
     color: #FFFFFF;
 }
+
 /* podcust circle */
-.podcust-circle{
+.podcust-circle {
     background-image: url(../assets/hero-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -92,15 +94,16 @@ button {
     width: 100%;
     height: 500px;
 }
-.circle-image{
-    
-}
-.circle-image img{
+
+.circle-image {}
+
+.circle-image img {
     width: 116px;
     max-width: 100%;
     height: auto;
 }
-.circle{
+
+.circle {
     position: relative;
     justify-content: center;
     align-items: center;
@@ -113,7 +116,8 @@ button {
     text-align: center;
     margin: 0 auto;
 }
-.badge{
+
+.badge {
     position: absolute;
     top: 18px;
     font-size: 18px;
@@ -166,6 +170,58 @@ button {
     transform: scale(1.05);
 }
 
+/* about section css */
+#about {
+    background-color: #1A0B2E;
+    color: #FFFFFF;
+    padding: 50px 0 120px;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-heading {
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-heading h2 {
+    margin-bottom: 16px;
+}
+
+.about-heading p {
+    line-height: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+    opacity: 80%;
+}
+
+.about-heading .a-pera {
+    margin-bottom: 16px;
+}
+
+.about-container hr {
+    margin: 80px 0;
+    opacity: 10%;
+}
+
+.about-rating {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+}
+
+.r-heading {
+    color: #00FF88;
+}
+
+.sub-heading {
+    opacity: 80%;
+}
+
 /* small device */
 @media screen and (max-width: 576px) {
     .nav-bar {
@@ -180,7 +236,8 @@ button {
     .hamburger {
         display: block;
     }
-     /* Banner podcust section css */
+
+    /* Banner podcust section css */
     .podcust-circle {
         height: 300px;
     }
@@ -202,7 +259,18 @@ button {
     .podcust-container p {
         font-size: 14px;
     }
-    .badge{
+
+    .badge {
         transform: translate(90px, 0);
+    }
+
+    /* about rating section css */
+    .about-rating {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    #about {
+        padding: 40px 20px;
     }
 }
