@@ -222,8 +222,70 @@ button {
     opacity: 80%;
 }
 
+/* Why Choose section css */
+#why-choose {
+    background-color: #230E3D;
+    padding: 120px;
+}
+
+.why-choose-container {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.why-choose-container h2 {
+    margin-bottom: 40px;
+}
+
+.feature {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 225px);
+    gap: 30px;
+    color: #FFFFFF;
+}
+
+.feature-card {
+    background-color: #351165;
+    padding: 40px;
+    border-radius: 40px;
+    text-align: left;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.feature-heading {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 16px 0;
+}
+
+.feature-pera {
+    line-height: 24px;
+    opacity: 80%;
+}
+
+.mediam-layout {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.wide-layout {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.small-layout {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
 /* small device */
 @media screen and (max-width: 576px) {
+    .heading {
+        font-size: 32px;
+    }
+
     .nav-bar {
         padding: 16px 20px;
     }
@@ -271,6 +333,21 @@ button {
     }
 
     #about {
+        padding: 40px 20px;
+    }
+
+    /* feature section  */
+    .feature {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .mediam-layout,
+    .wide-layout,
+    .small-layout {
+        grid-column: span 1;
+    }
+
+    #why-choose {
         padding: 40px 20px;
     }
 }
