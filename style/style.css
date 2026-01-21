@@ -405,6 +405,36 @@ button {
     border-radius: 50%;
     padding: 2px;
 }
+/* footer section css */
+footer{
+    padding: 120px;
+    background-color: #1A0B2E;
+    color: #FFFFFF;
+    background-image: url(../assets/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.footer-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.s-footer-link{
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+    margin: 32px 0;
+    flex-wrap: wrap;
+}
+.s-footer-link a{
+    text-decoration: none;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
 
 /* small device */
 @media screen and (max-width: 576px) {
@@ -474,7 +504,7 @@ button {
         grid-column: span 1;
     }
 
-    #why-choose {
+    #why-choose, footer {
         padding: 40px 20px;
     }
 
@@ -495,4 +525,7 @@ button {
     .social-link {
         justify-content: center;
     }
+    /* footer{
+        width: auto;
+    } */
 }
